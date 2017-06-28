@@ -23,16 +23,16 @@ namespace SplitHTML {
 		//---methods
 
 		public static void CompileDir(string dirPath) {
-			Log.Write("Compiling Dir: " + dirPath);
+			Log.Write("Compiling Dir: " + Directory.GetCurrentDirectory());
 			Log.depth++;
 
-			string[] files = Directory.GetFiles(dirPath, "*" + splitHtmlExtention);
+			string[] files = Directory.GetFiles(Path.Combine(Directory.GetCurrentDirectory(),dirPath), "*"+splitHtmlExtention);
 			foreach (string file in files) {
 				CompileFile(file);
 			}
 
 			Log.depth--;
-			Log.Write("Finished Compiling Dir: " + dirPath + "\n");
+			Log.Write("Finished Compiling Dir: " + Directory.GetCurrentDirectory() + "\n");
 		}
 
 		public static void CompileFile(string fileName) {

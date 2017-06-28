@@ -26,10 +26,11 @@ namespace SplitHTML {
 			} else if (arguments["compileDir"].IsTrue) {
 				if (arguments["<rootDir>"] != null) {
 					Directory.SetCurrentDirectory(arguments["<rootDir>"].ToString());
+					Compiler.CompileDir(arguments["<dir>"].ToString());
 				} else {
 					Directory.SetCurrentDirectory(arguments["<dir>"].ToString());
+					Compiler.CompileDir("");
 				}
-				Compiler.CompileDir(arguments["<dir>"].ToString());
 			}
 			
 		}
