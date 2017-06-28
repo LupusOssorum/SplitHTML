@@ -2,7 +2,7 @@
 
 nbsp;nbsp;nbsp;nbsp;Split HTML is a simple command line app program to compile partial html file into html file your browser reads.  This is not a program that runs on the server compiling files before they are sent to the user, rather, this will run on your development computer to create html which you put on your web server.
 
-&nbsp;nbsp;nbsp;nbsp;A simple example of how this can be useful.  If you are developing a simple website with a menu bar the is same of all your pages  you can take the html code for the menu bar and put it in a separate file and merely run the Split HTML compiler to put the one file into all your pages.
+&nbsp;&nbsp;&nbsp;&nbsp;A simple example of how this can be useful.  If you are developing a simple website with a menu bar the is same of all your pages  you can take the html code for the menu bar and put it in a separate file and merely run the Split HTML compiler to put the one file into all your pages.
 
 <h1>How it works</h1>
 
